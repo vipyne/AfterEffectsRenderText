@@ -14,12 +14,12 @@
 
 
 // TWILIO / NODE /////////////////////////////////////////////////////////////
-var client = require('twilio')('AC87e7ceb41f43feeab04fb2004fd854a5', '50197febdd79650782b34439f09b8645');
+var client = require('twilio')('AUTH_TOKEN', 'ACCOUNT_SID');
 
 //Send an SMS text message
 client.sendMessage({
 
-    to:'+16104204483', // Any number Twilio can deliver to
+    to:'+12345678989', // Any number Twilio can deliver to
     from: '+14846794637', // A number you bought from Twilio and can use for outbound communication
     body: 'render is complete.  word to your mother.' // body of the SMS message
 
